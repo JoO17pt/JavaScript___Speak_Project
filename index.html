@@ -15,72 +15,52 @@
   </head>
   <body>
     <div class="container">
-      <div class="row">
-        <h2>Search</h2>
-        <form>
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label"
+      <nav>
+        <div class="row">
+          <h2>Search</h2>
+          <form>
+            <div class="mb-3">
+              <!-- <label for="exampleInputEmail1" class="form-label"
               >Enter text</label
-            >
-            <input
-              type="email"
-              class="form-control"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
-            />
-            <div id="emailHelp" class="form-text">
-              We'll never share your email with anyone else.
+            > -->
+              <input
+                type="text"
+                placeholder="Enter your text here"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
             </div>
+
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Select the voice</option>
+            </select>
+
+            <br />
+
+            <div id="initialButtons">
+              <button class="btn btn-primary">Speak</button>
+              <button class="btn btn-primary">Save</button>
+            </div>
+
+            <div id="helpMessage" class="form-text displayNone">
+              Please enter some text and select a voice.
+            </div>
+          </form>
+        </div>
+      </nav>
+
+      <main>
+        <div class="row">
+          <div class="col-6 displayNone" id="recent">
+            <h2>Recent</h2>
           </div>
 
-          <select class="form-select" aria-label="Default select example">
-            <option selected>Select the voice</option>
-          </select>
-
-          <br />
-
-          <button type="submit" class="btn btn-primary">Speak</button>
-          <button type="submit" class="btn btn-primary">
-            Save
-          </button>
-        </form>
-      </div>
-
-      <br />
-
-      <div class="row">
-        <div class="col-6">
-          <h2>Recent</h2>
-
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">
-                With supporting text below as a natural lead-in to additional
-                content.
-              </p>
-              <a href="#" class="btn btn-primary">Speak</a>
-              <a href="#" class="btn btn-primary">Save</a>
-            </div>
+          <div class="col-6 displayNone" id="favorites">
+            <h2>Favorites</h2>
           </div>
         </div>
-
-        <div class="col-6">
-          <h2>Favorites</h2>
-
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">
-                With supporting text below as a natural lead-in to additional
-                content.
-              </p>
-              <a href="#" class="btn btn-primary">Speak</a>
-              <a href="#" class="btn btn-primary">Remove</a>
-            </div>
-          </div>
-        </div>
-      </div>
+      </main>
     </div>
 
     <script src="https://code.responsivevoice.org/responsivevoice.js?key=1ni953lu"></script>

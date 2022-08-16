@@ -1,3 +1,41 @@
 div {
     /* border: 1px solid black; */
 }
+
+.displayNone {
+    display: none;
+}
+
+.card {
+    margin-bottom: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5vh;
+    /* justify-content: space-between; */
+    height: 90vh;
+    margin-top: 5vh;
+}
+
+nav {
+    position: relative;
+    /* height: 30%; */
+}
+
+main {
+    position: relative;
+    overflow: auto;
+    /* height: 70%; */
+}
+
+#favorites {
+    /* position: relative; */
+    /* overflow: auto; */
+}
+
+#recent {
+    /* position: relative;
+    overflow: auto; */
+}
